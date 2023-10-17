@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "description": "Create React component",
+    "status": "Not Started"
+  },
+  {
+    "id": 2,
+    "description": "Design UI for the project",
+    "status": "In Progress"
+  },
+  {
+    "id": 3,
+    "description": "Implement CRUD functionality",
+    "status": "Finished"
+  },
+  {
+    "id": 4,
+    "description": "Add pagination to the task list",
+    "status": "Not Started"
+  },
+  {
+    "id": 5,
+    "description": "Testing and debugging",
+    "status": "In Progress"
+  }
+]
