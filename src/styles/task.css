@@ -1,0 +1,129 @@
+/* Task.css */
+.task-wrapped {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+    /* width: 85%; */
+    justify-content: center;
+    /* Center the contents horizontally */
+}
+
+.task-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.task-form h3 {
+    margin: 0;
+}
+
+.mybtn{
+    max-width: fit-content;
+}
+.task button{
+    margin-right: 10px;
+    
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Comment this line out */
+}
+
+.task {
+    flex-basis: calc(50% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task[data-status="Not Started"] {
+    background-color: #ffcccc;
+    /* Color for "Not Started" tasks */
+}
+
+.task[data-status="In Progress"] {
+    background-color: #ffebcc;
+    /* Color for "In Progress" tasks */
+}
+
+.task[data-status="Finished"] {
+    background-color: #ccffcc;
+}
+
+
+
+@media (max-width: 768px) {
+    .task {
+        flex-basis: calc(100% - 20px);
+    }
+}
+/* modal styles */
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal {
+    background: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.modal h3 {
+    margin-top: 0;
+}
+
+.modal input,
+.modal select,
+.modal button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.modal button {
+    background: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+}
+
+
+.pagi-button{
+    display: inline-block;
+    max-width:20px;
+}

@@ -1,12 +1,24 @@
 import './App.css'
-import TaskList from './Components/TaskList';
+import Login from './Components/Login';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Task from './Components/Task';
+import Navbar from './Components/Navbar';
 
 function App() {
 
   return (
-    <>
-     <TaskList/>
-    </>
+    <Router>
+      <Navbar/>
+      <Routes>
+
+        <Route path="/" element={<Task />}>
+        </Route>
+        <Route path="/login" element={<Login />
+}>
+        </Route>
+      </Routes>
+    </Router>
+
   )
 }
 

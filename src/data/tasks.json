@@ -15,6 +15,21 @@
     "status": "Finished"
   },
   {
+    "id": 10,
+    "description": "Create React component",
+    "status": "Not Started"
+  },
+  {
+    "id": 21,
+    "description": "Design UI for the project",
+    "status": "In Progress"
+  },
+  {
+    "id": 32,
+    "description": "Implement CRUD functionality",
+    "status": "Finished"
+  },
+  {
     "id": 4,
     "description": "Add pagination to the task list",
     "status": "Not Started"
